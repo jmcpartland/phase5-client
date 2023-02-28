@@ -17,7 +17,7 @@ function ResourceForm({resource}) {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    fetch("/resources", {
+    fetch("http://code.projectlatitude.com/resources", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

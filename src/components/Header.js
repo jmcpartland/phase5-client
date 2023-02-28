@@ -25,7 +25,7 @@ function Header() {
   ];
 
   const handleLogout = () => {
-      fetch('/logout', {
+      fetch('http://code.projectlatitude.com/logout', {
           method: 'DELETE',
           headers: { 'Content-Type': 'application/json' }
       })

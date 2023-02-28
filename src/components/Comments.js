@@ -15,7 +15,7 @@ function Comments({post}) {
   const params = useParams();
 
   useEffect(() => {
-    fetch(`/posts/${params.id}/comments`)
+    fetch(`http://code.projectlatitude.com/posts/${params.id}/comments`)
     .then(res => res.json())
     .then(data => {
       // console.log(data)

@@ -19,7 +19,7 @@ function Post() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch(`/all-posts/${params.id}`)
+    fetch(`http://code.projectlatitude.com/all-posts/${params.id}`)
     .then(res => res.json())
     .then(data => {
       setPost(data)

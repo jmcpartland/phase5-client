@@ -25,7 +25,7 @@ function Posts({ post, updatePostsList }) {
   }
 
   const handleDelete = (e) => {
-    fetch(`posts/${post.id}`, {
+    fetch(`http://code.projectlatitude.com/posts/${post.id}`, {
       method: 'DELETE',
     })
     .then(() => updatePostsList(post))
