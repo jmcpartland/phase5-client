@@ -42,7 +42,7 @@ function SignUp({ handleClose }) {
 
   const handleSubmit = (e) => {
       e.preventDefault()
-      fetch('http://code.projectlatitude.com/signup', { // configuration object
+      fetch('https://code.projectlatitude.com/signup', { // configuration object
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

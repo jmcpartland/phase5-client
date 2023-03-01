@@ -19,7 +19,7 @@ function PostForm() {
 
   useEffect(() => {
     if (params.id) {
-      fetch(`http://code.projectlatitude.com/posts/${params.id}`)
+      fetch(`https://code.projectlatitude.com/posts/${params.id}`)
         .then(res => res.json())
         .then(post => {
           setTitle(post.title)
@@ -37,7 +37,7 @@ function PostForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`http://code.projectlatitude.com/posts/${url}`, { 
+    fetch(`https://code.projectlatitude.com/posts/${url}`, { 
       method: fetchMethod,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

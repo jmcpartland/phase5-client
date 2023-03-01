@@ -9,7 +9,7 @@ function ResourcesList() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('http://code.projectlatitude.com/resources')
+    fetch('https://code.projectlatitude.com/resources')
       .then(res => res.json())
       .then(data => {
         console.log(data)

@@ -38,7 +38,7 @@ const Login = ({ handleClose }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch('http://code.projectlatitude.com/login', {
+        fetch('https://code.projectlatitude.com/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({

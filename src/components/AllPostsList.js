@@ -9,7 +9,7 @@ function AllPostsList() {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        fetch('http://code.projectlatitude.com/all-posts')
+        fetch('https://code.projectlatitude.com/all-posts')
         .then(res => res.json())
         .then(data => {
             setPosts(data)

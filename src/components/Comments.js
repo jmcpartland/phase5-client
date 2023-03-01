@@ -15,7 +15,7 @@ function Comments({post}) {
   const params = useParams();
 
   useEffect(() => {
-    fetch(`http://code.projectlatitude.com/posts/${params.id}/comments`)
+    fetch(`https://code.projectlatitude.com/posts/${params.id}/comments`)
     .then(res => res.json())
     .then(data => {
       // console.log(data)
@@ -28,7 +28,7 @@ function Comments({post}) {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    fetch("/comments", {
+    fetch("https://code.projectlatitude.com/comments", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -9,7 +9,7 @@ function UserProvider({ children }) {
     const [loggedIn, setLoggedIn] = useState(false)
 
     useEffect(() => {
-        fetch('http://code.projectlatitude.com/me')
+        fetch('https://code.projectlatitude.com/me')
         .then(res => res.json())
         .then(data => {
             setUser(data)
